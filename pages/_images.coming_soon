@@ -1,0 +1,22 @@
+# Generate images
+
+[Generate high-quality, detailed images for your character cards.](https://aimate.me/images)
+
+## How Stable Diffusion Models Work
+
+Stable Diffusion models create images from text prompts. They are good at using detailed and clear language to make pictures.
+
+Think of your prompt as instructions, and the model as the one drawing.
+
+## How to write a great prompt
+
+### Be Specific and Detailed
+
+- **Clear Descriptions:** Paint a detailed picture with your words. Instead of a generic "a person," dive into specifics like their style, age, and unique traits.
+  - **Example:** "a spirited boy with spiky, jet-black hair, decked out in a neon hoodie, ripped jeans, and graffiti-laden sneakers, clutching a skateboard."
+- **Environment and Atmosphere:** Sketch the scene around your character. It could be "perched atop a graffiti-covered rooftop at dusk" or "wandering through a bustling, neon-lit night market."
+- **Mood and Tone:** Set the emotional scene. Descriptions like "a whisper of tranquility" or "a burst of unbridled joy" help shape the emotional landscape of your image.
+
+## Visibility
+
+Images are public by default but can be set to private.

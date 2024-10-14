@@ -1,0 +1,15 @@
+name: Notify Repo Role-AI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification to Repo Role-AI
+        run: |
+          curl -X POST -H "Authorization: token ${{ secrets.SECRET_KEY }}" \
+          https://hook.aimate.me/docs/hook/github
