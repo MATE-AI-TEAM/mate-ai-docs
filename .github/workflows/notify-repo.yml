@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Send notification to Repo Role-AI
         run: |
-          curl -X POST -H "Authorization: token ${{ secrets.SECRET_KEY }}" \
+          curl -X POST -H "Authorization: Bearer ${{ secrets.SECRET_KEY }}" \
           https://hook.aimate.me/docs/hook/github
