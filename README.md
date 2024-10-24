@@ -1,28 +1,33 @@
-## Getting Started
+<p align="center">
+<a href="https://www.aimate.me?ch=github-docs">
+<img src="https://resource.aimate.me/avatar-banner.png" alt="Logo">
+</a>
 
-First, run the development server:
+<h1 align="center">MATE.AI</h3>
 
-```bash
-pnpm dev
-```
+<p align="center">
+  AI characters and roleplaying platform.
+  <br />
+  <br />
+  <a href="https://aimate.me">Website</a>
+  ·
+  <a href="https://docs.aimate.me">Docs</a>
+  ·
+  <a href="https://github.com/MATE-AI-TEAM/mate-ai-docs/issues">Issues</a>
+</p>
 
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+<p align="center">
+   <a href="mailto:team@aimate.me"><img src="https://img.shields.io/badge/team-blue" alt='team'></a>
+   <a href="mailto:feedback@aimate.me"><img src="https://img.shields.io/badge/feedback-purple" alt="feedback"></a>
+   <a href="mailto:support@aimate.me"><img src="https://img.shields.io/badge/support-brightgreen" alt="support"></a>
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br/>
 
-To create [API routes](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) add an `api/` directory to the `app/` directory with a `route.ts` file. For individual endpoints, create a subfolder in the `api` directory, like `api/hello/route.ts` would map to [http://localhost:3001/api/hello](http://localhost:3001/api/hello).
+# AI characters and roleplay for everyone
 
-## Learn More
+### 🎨 Features
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn/foundations/about-nextjs) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_source=github.com&utm_medium=referral&utm_campaign=turborepo-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Customize Characters:** Create your own characters, personas and UI unique.
+- **Generate Images (Coming soon):** Create images with open-source AI models.
+- **Generate Voice (Coming soon):** Create characters that can talk to users with a realistic voice.
