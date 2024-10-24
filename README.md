@@ -29,5 +29,5 @@
 ### 🎨 Features
 
 - **Customize Characters:** Create your own characters, personas and UI unique.
-- **Generate Images (Coming soon):** Create images with open-source AI models.
+- **Generate Images (Coming soon):** Create images you like for characters.
 - **Generate Voice (Coming soon):** Create characters that can talk to users with a realistic voice.
