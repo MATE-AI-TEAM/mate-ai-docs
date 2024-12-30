@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://www.aimate.me?ch=github-docs">
-<img src="https://resource.aimate.me/avatar-banner.png" alt="Logo">
+  <img src="https://resource.aimate.me/avatar-banner.png" alt="Logo">
 </a>
 
 <h1 align="center">MATE.AI</h3>
