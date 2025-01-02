@@ -9,7 +9,7 @@
   AI characters and roleplaying platform.
   <br />
   <br />
-  <a href="https://aimate.me">Website</a>
+  <a href="https://www.aimate.me?ch=github-docs">Website</a>
   ·
   <a href="https://docs.aimate.me">Docs</a>
   ·
