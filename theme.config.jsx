@@ -13,10 +13,10 @@ export default {
     <>
       <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32"/>
       <link rel="icon" href="/favicon.ico"/>
-      <meta property="og:title" content="MATE.AI Docs"/>
+      <meta property="og:title" content="MATE.AI Docs - NSFW AI Chat"/>
       <meta
         property="og:description"
-        content="Learn how to create engaging characters at MATE.AI"
+        content="MATE.AI, experience interactive chat, games and role-playing with NSFW AI - the possibilities are pretty endless."
       />
     </>
   ),
@@ -24,7 +24,7 @@ export default {
     text: (
       <span>
         {new Date().getFullYear()} ©{" "}
-        <a href="https://nextra.site" target="_blank">
+        <a href="https://aimate.me" target="_blank">
           MATE.AI
         </a>
         .
