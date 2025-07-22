@@ -11,7 +11,9 @@ export default {
   },
   head: (
     <>
-      <meta property="og:title" content="MATE.AI Docs" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32"/>
+      <link rel="icon" href="/favicon.ico"/>
+      <meta property="og:title" content="MATE.AI Docs"/>
       <meta
         property="og:description"
         content="Learn how to create engaging characters at MATE.AI"
