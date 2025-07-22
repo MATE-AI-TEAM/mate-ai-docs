@@ -3,6 +3,4 @@ const withNextra = require("nextra")({
   themeConfig: "./theme.config.jsx",
 });
 
-module.exports = withNextra({
-  transpilePackages: ["@repo/ui"],
-});
+module.exports = withNextra({});
