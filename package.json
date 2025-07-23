@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
+    "@napi-rs/simple-git": "0.1.20",
     "next": "^14.2.16",
     "nextra": "2.13.3",
     "nextra-theme-docs": "2.13.3",
