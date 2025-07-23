@@ -13,6 +13,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "mdx-components.js", "app/page.mdx"  ],
   "exclude": ["node_modules"]
 }
