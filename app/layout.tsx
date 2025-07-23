@@ -79,7 +79,7 @@ export default async function RootLayout({
   const pageMap = await getPageMap();
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <Head>
         <link
           rel="icon"
