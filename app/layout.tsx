@@ -4,12 +4,14 @@ import { getPageMap } from "nextra/page-map";
 import { IconBrandTelegram } from "@tabler/icons-react";
 import { inter } from "web/app/fonts";
 import { cn } from "@repo/ui/src/utils";
+import React from "react";
 
 import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://aimate.me"),
   title: {
+    default: "MATE.AI Docs",
     template: "%s - MATE.AI Docs",
   },
   description:
@@ -93,7 +95,7 @@ export default async function RootLayout({
           navbar={navbar}
           footer={footer}
           editLink="Edit this page on GitHub"
-          docsRepositoryBase="https://github.com/MATE-AI-TEAM/mate-ai-docs"
+          docsRepositoryBase="https://github.com/MATE-AI-TEAM/mate-ai-docs/blob/main"
           // sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={pageMap}
           sidebar={{
