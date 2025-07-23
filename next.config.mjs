@@ -12,19 +12,16 @@ const nextConfig = {
       }
     }
   },
-  webpack: (config, { dev }) => {
-    if (!dev) {
-      config.module.rules.push({
-        test: /\.mdx?$/,
-        use: [
-          {
-            loader: "@mdx-js/loader",
-            /** @type {Options} */
-            // options: {/* jsxImportSource: …, otherOptions… */}
-          },
-        ],
-      });
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        '@napi-rs/simple-git': false,
+      };
     }
+
+    config.externals = config.externals || [];
+    config.externals.push('@napi-rs/simple-git');
 
     return config;
   },
