@@ -2,7 +2,7 @@ import { Footer, Layout, Navbar } from "nextra-theme-docs";
 import { Banner, Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import { IconBrandTelegram } from "@tabler/icons-react";
-import { inter } from 'web/app/fonts';
+import { inter } from "web/app/fonts";
 import { cn } from "@repo/ui/src/utils";
 
 import "./globals.css";
@@ -40,18 +40,22 @@ export default async function RootLayout({
     <Navbar
       logo={
         <div className="x:flex x:items-center x:gap-2">
-          <span className="x:flex x:items-center x:text-2xl" style={{ fontWeight: 900 }}>
+          <span
+            className="x:flex x:items-center x:text-2xl"
+            style={{ fontWeight: 900 }}
+          >
             <span
-            style={{
-              color: 'transparent',
-              backgroundClip: 'text',
-              backgroundImage: 'linear-gradient(to right, #06b6d4, #3b82f6)',
-            }}
-            className="x:inline x:bg-gradient-to-r x:bg-clip-text x:text-transparent x:from-cyan-500 x:to-blue-500">
+              style={{
+                color: "transparent",
+                backgroundClip: "text",
+                backgroundImage: "linear-gradient(to right, #06b6d4, #3b82f6)",
+              }}
+              className="x:inline x:bg-gradient-to-r x:bg-clip-text x:text-transparent x:from-cyan-500 x:to-blue-500"
+            >
               MATE.AI
             </span>
           </span>
-          <span className='x:opacity-60'>Docs</span>
+          <span className="x:opacity-60">Docs</span>
         </div>
       }
       chatIcon={<IconBrandTelegram size={20} />}
@@ -82,11 +86,6 @@ export default async function RootLayout({
           sizes="32x32"
         />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="MATE.AI Docs - NSFW AI Chat" />
-        <meta
-          property="og:description"
-          content="MATE.AI, experience interactive chat, games and role-playing with NSFW AI - the possibilities are pretty endless."
-        />
       </Head>
       <body className={cn(inter.className)}>
         <Layout
