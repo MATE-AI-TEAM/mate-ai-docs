@@ -6,7 +6,7 @@ import { inter } from "web/app/fonts";
 import { cn } from "@repo/ui/src/utils";
 import React from "react";
 
-import "nextra-theme-docs/style.css";
+import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://aimate.me"),
