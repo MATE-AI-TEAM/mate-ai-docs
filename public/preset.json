@@ -1,56 +1,82 @@
 {
-  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
   "$id": "https://aimate.me/preset.schema.json",
   "type": "object",
+  "description": "Preset for MATE.AI",
   "properties": {
     "temperature": {
       "type": "number",
       "minimum": 0,
-      "maximum": 2
+      "maximum": 2,
+      "description": "Sampling temperature"
     },
     "presence_penalty": {
       "type": "number",
       "minimum": -2,
-      "maximum": 2
+      "maximum": 2,
+      "description": "Presence penalty"
     },
     "frequency_penalty": {
       "type": "number",
       "minimum": -2,
-      "maximum": 2
+      "maximum": 2,
+      "description": "Frequency penalty"
     },
     "top_p": {
       "type": "number",
       "minimum": 0,
       "exclusiveMinimum": 0,
-      "maximum": 1
+      "maximum": 1,
+      "description": "Top-p sampling value"
     },
     "top_k": {
       "type": "number",
-      "minimum": 1
+      "minimum": 1,
+      "description": "Top-k sampling value"
     },
     "min_p": {
       "type": "number",
       "minimum": 0,
-      "maximum": 1
+      "maximum": 1,
+      "description": "Minimum probability threshold"
     },
     "top_a": {
       "type": "number",
       "minimum": 0,
-      "maximum": 1
+      "maximum": 1,
+      "description": "Alternate top sampling parameter"
     },
     "repetition_penalty": {
       "type": "number",
       "minimum": 0,
       "exclusiveMinimum": 0,
-      "maximum": 2
+      "maximum": 2,
+      "description": "Repetition penalty"
     },
     "prompts": {
       "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
       "items": {
         "$ref": "#/definitions/prompt"
-      }
+      },
+      "description": "Insert or replace into the conversation history passed to the AI",
+      "contains": {
+        "type": "object",
+        "required": ["identifier"],
+        "properties": {
+          "identifier": {
+            "type": "string",
+            "const": "chat_history"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minContains": 1,
+      "maxContains": 1
     }
   },
+  "required": ["prompts"],
   "additionalProperties": false,
   "definitions": {
     "prompt": {
@@ -59,12 +85,14 @@
         {
           "type": "object",
           "required": ["role", "content"],
+          "description": "Insert into the conversation history, the order determines the insertion position",
           "properties": {
             "role": {
               "$ref": "#/definitions/role"
             },
             "content": {
-              "type": "string"
+              "type": "string",
+              "maxLength": 1000
             }
           },
           "additionalProperties": false
@@ -72,12 +100,25 @@
         {
           "type": "object",
           "required": ["role", "identifier"],
+          "description": "Replace the preset in the conversation history, the order determines the insertion position",
           "properties": {
             "role": {
               "$ref": "#/definitions/role"
             },
             "identifier": {
               "$ref": "#/definitions/identifier"
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": ["identifier"],
+          "description": "Replace into the conversation history, the order determines the insertion position",
+          "properties": {
+            "identifier": {
+              "type": "string",
+              "const": "chat_history"
             }
           },
           "additionalProperties": false
@@ -94,7 +135,6 @@
         "character_instructions",
         "character_personality",
         "character_scenario",
-        "chat_history",
         "dialogue_examples",
         "persona_description"
       ]
