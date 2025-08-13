@@ -4,6 +4,9 @@
   "type": "object",
   "description": "Preset for MATE.AI",
   "properties": {
+    "$schema": {
+      "const": "https://docs.aimate.me/preset.json"
+    },
     "temperature": {
       "type": "number",
       "minimum": 0,
@@ -73,26 +76,11 @@
             },
             "additionalProperties": false
           }
-        },
-        {
-          "not": {
-            "contains": {
-              "type": "object",
-              "required": ["identifier"],
-              "properties": {
-                "identifier": {
-                  "const": "chat_history"
-                }
-              },
-              "additionalProperties": false
-            },
-            "minItems": 2
-          }
         }
       ]
     }
   },
-  "required": ["prompts"],
+  "required": ["prompts", "$schema"],
   "additionalProperties": false,
   "definitions": {
     "prompt": {
