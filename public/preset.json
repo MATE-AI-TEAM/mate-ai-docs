@@ -1,6 +1,6 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema#",
-  "$id": "https://aimate.me/preset.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://docs.aimate.me/preset.json",
   "type": "object",
   "description": "Preset for MATE.AI",
   "properties": {
@@ -61,19 +61,35 @@
         "$ref": "#/definitions/prompt"
       },
       "description": "Insert or replace into the conversation history passed to the AI",
-      "contains": {
-        "type": "object",
-        "required": ["identifier"],
-        "properties": {
-          "identifier": {
-            "type": "string",
-            "const": "chat_history"
+      "allOf": [
+        {
+          "contains": {
+            "type": "object",
+            "required": ["identifier"],
+            "properties": {
+              "identifier": {
+                "const": "chat_history"
+              }
+            },
+            "additionalProperties": false
           }
         },
-        "additionalProperties": false
-      },
-      "minContains": 1,
-      "maxContains": 1
+        {
+          "not": {
+            "contains": {
+              "type": "object",
+              "required": ["identifier"],
+              "properties": {
+                "identifier": {
+                  "const": "chat_history"
+                }
+              },
+              "additionalProperties": false
+            },
+            "minItems": 2
+          }
+        }
+      ]
     }
   },
   "required": ["prompts"],
@@ -99,26 +115,11 @@
         },
         {
           "type": "object",
-          "required": ["role", "identifier"],
+          "required": ["identifier"],
           "description": "Replace the preset in the conversation history, the order determines the insertion position",
           "properties": {
-            "role": {
-              "$ref": "#/definitions/role"
-            },
             "identifier": {
               "$ref": "#/definitions/identifier"
-            }
-          },
-          "additionalProperties": false
-        },
-        {
-          "type": "object",
-          "required": ["identifier"],
-          "description": "Replace into the conversation history, the order determines the insertion position",
-          "properties": {
-            "identifier": {
-              "type": "string",
-              "const": "chat_history"
             }
           },
           "additionalProperties": false
@@ -136,7 +137,8 @@
         "character_personality",
         "character_scenario",
         "dialogue_examples",
-        "persona_description"
+        "persona_description",
+        "chat_history"
       ]
     }
   }
