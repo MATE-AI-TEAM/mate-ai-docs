@@ -33,8 +33,9 @@
       "description": "Top-p sampling value"
     },
     "top_k": {
-      "type": "number",
+      "type": "integer",
       "minimum": 1,
+      "maximum": 100,
       "description": "Top-k sampling value"
     },
     "min_p": {
