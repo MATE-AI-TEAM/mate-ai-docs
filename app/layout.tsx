@@ -1,10 +1,11 @@
 import { Footer, Layout, Navbar } from "nextra-theme-docs";
 import { Banner, Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
-import { IconBrandTelegram } from "@tabler/icons-react";
+import { IconHome, IconBrandTelegram } from "@tabler/icons-react";
 import { inter } from "web/app/fonts";
 import { cn } from "@repo/ui/src/utils";
 import React from "react";
+import Link from "next/link";
 
 import "./globals.css";
 
@@ -35,8 +36,15 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const banner = <Banner storageKey="docs_banner">Nextra 2 Alpha</Banner>;
-  const banner = null;
+  const banner = (
+    <Banner storageKey="feature">
+      Arbitrary{" "}
+      <Link href={"//aimate.me/my-presets/create"} className={"underline"}>
+        Presets
+      </Link>{" "}
+      For Generating Text Using LLMs
+    </Banner>
+  );
 
   const navbar = (
     <Navbar
@@ -61,7 +69,9 @@ export default async function RootLayout({
         </div>
       }
       chatIcon={<IconBrandTelegram size={20} />}
-      chatLink="https://t.me/+YcnIm-oCnKMyYzZk"
+      projectIcon={<IconHome size={20} />}
+      projectLink="//aimate.me"
+      chatLink="//t.me/+YcnIm-oCnKMyYzZk"
     />
   );
 

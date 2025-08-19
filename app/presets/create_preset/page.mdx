@@ -1,0 +1,65 @@
+import Link from "next/link";
+import { Callout } from "nextra/components";
+
+# 🛠️ Create a Preset
+
+<Callout type="warning" emoji="️⚠">
+  The default preset will take effect **globally**.
+  If there is no default preset, **the system built-in preset will be used**.
+</Callout>
+
+You have two ways to customize:
+
+- ### Set in the interface
+
+Go to <Link href='//aimate.me/my-presets/create' className='underline underline-offset-2'>Create preset</Link>
+
+- ### Upload a JSON file
+
+You can also upload a configuration file, which will be automatically recognized by the system.
+
+Reference: <Link href='/preset.json' className='underline underline-offset-2'>JSON Schema</Link>
+
+For example:
+
+```json
+{
+  "$schema": "https://docs.aimate.me/preset.json",
+  "temperature": 1,
+  "presence_penalty": 0,
+  "frequency_penalty": 0,
+  "top_p": 0,
+  "top_k": 0,
+  "min_p": 0,
+  "top_a": 0,
+  "repetition_penalty": 0,
+  "prompts": [
+    {
+      "role": "system",
+      "content": "Write {{char}}'s next reply in a fictional chat between {{char}} and {{user}}."
+    },
+    {
+      "role": "system",
+      "content": "Use asterisks for narration and emotions like *sad* or *laughing*."
+    },
+    {
+      "identifier": "persona_description"
+    },
+    {
+      "identifier": "character_instructions"
+    },
+    {
+      "identifier": "character_personality"
+    },
+    {
+      "identifier": "character_scenario"
+    },
+    {
+      "identifier": "dialogue_examples"
+    },
+    {
+      "identifier": "chat_history"
+    }
+  ]
+}
+```

@@ -1,0 +1,37 @@
+# 🛠️ Sampler Parameters
+
+Currently supported sampler parameters include:
+
+- ### temperature
+        Controls randomness — higher = more creative, lower = more deterministic<br/>
+        Range：**[0.0, 2.0]**
+
+- ### presence_penalty
+        Penalizes tokens that have appeared before to encourage new topics<br/>
+        Range：**[-2.0, 2.0]**
+
+- ### frequency_penalty
+        Penalizes frequent repetition of the same tokens to reduce verbosity<br/>
+        Range：**[-2.0, 2.0]**
+
+- ### top_p
+        Aka Nucleus sampling — consider only tokens within the cumulative probability <code className="whitespace-break-spaces text-sm rounded-md bg-gray-800 px-1 py-0.5">p</code><br/>
+        Range：**[0.0, 1.0]**
+
+- ### top_k
+        Restrict sampling to the top <code className="whitespace-break-spaces text-sm rounded-md bg-gray-800 px-1 py-0.5">k</code> most probable tokens<br/>
+        Range：**[0.0, ∞)**
+
+- ### min_p
+        Minimum probability threshold — limits the token pool by cutting off low-probability tokens relative to the top token<br/>
+        Range：**[0.0, 1.0]**
+
+- ### top_a
+        Adaptive nucleus sampling — a threshold for token selection based on the square of the highest token probability<br/>
+        Range：**[0.0, 1.0]**
+
+- ### repetition_penalty
+        Attempts to curb repetition by penalizing tokens based on how often they occur in the context<br/>
+        Range：**[0.0, 2.0]**
+
+

@@ -28,7 +28,6 @@
     "top_p": {
       "type": "number",
       "minimum": 0,
-      "exclusiveMinimum": 0,
       "maximum": 1,
       "description": "Top-p sampling value"
     },
@@ -53,7 +52,6 @@
     "repetition_penalty": {
       "type": "number",
       "minimum": 0,
-      "exclusiveMinimum": 0,
       "maximum": 2,
       "description": "Repetition penalty"
     },
