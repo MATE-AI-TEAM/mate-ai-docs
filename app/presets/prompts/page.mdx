@@ -3,37 +3,57 @@ import { Callout } from "nextra/components";
 
 # 💡 Prompts
 
-The following keywords are built in by default:
+Prompts tell the AI _how to behave_
 
-- ### character_instructions
+You can freely **rearrange** the order to get the behavior you want.
+
+They can use built-in macros (identifiers) or be fully customized by the user.
+
+## System Built-in Macros
+
+The following macros are built in by default:
+
+<Callout type="info">
+    Each macro value MUST appear at most once in the prompts array
+</Callout>
+
+- ### `{{character_instructions}}`
 
 Reference: <Link href='/characters/instruction' className='underline underline-offset-2'>🧠 Instructions</Link>
 
 
-- ### character_personality
+- ### `{{character_personality}}`
 
 Reference: <Link href='/characters/personality' className='underline underline-offset-2'>🙉 Personality</Link>
 
 
-- ### character_scenario
+- ### `{{character_scenario}}`
 
 Reference: <Link href='/characters/scenario' className='underline underline-offset-2'>🎥 Scenarios</Link>
 
 
-- ### dialogue_examples
+- ### `{{dialogue_examples}}`
 
 Reference: <Link href='/characters/examples_of_dialogue' className='underline underline-offset-2'>💬 Examples of dialogue</Link>
 
 
-- ### persona_description
+- ### `{{persona_description}}`
 
 Reference: <Link href='/personas' className='underline underline-offset-2'>😋 Personas</Link>
 
 
-- ### chat_history
+- ### `{{chat_history}}`
 
-<Callout type="warning" emoji="️⚠">
-    Each preset configuration must contain a chat_history.
+<Callout type="warning">
+    Each preset configuration must contain a <code>{`{{chat_history}}`}</code>.
 </Callout>
 
 A sequence of conversation histories, where each element is a message object containing the roles and text of the two parties. The model generates the next response based on this history.
+
+
+## Custom Prompts
+
+In addition to built-in identifiers, you can define your own prompts.
+
+A custom prompt is created by specifying a <code className="whitespace-break-spaces text-sm rounded-md bg-gray-800 px-1 py-0.5">role</code> and a <code className="whitespace-break-spaces text-sm rounded-md bg-gray-800 px-1 py-0.5">content</code> field
+
