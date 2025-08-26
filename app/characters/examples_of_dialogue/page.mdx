@@ -1,0 +1,26 @@
+import { Callout } from "nextra/components";
+
+# 💬 Examples of dialogue
+
+<Callout type="warning">
+    Examples of dialogue are **included** in the character's memory.
+</Callout>
+
+Examples of dialogue are short, sample conversations that demonstrate how your character speaks, reacts, and interacts in various situations.
+
+They showcase tone, personality, humor style, emotional range, and any quirks in vocabulary or pacing.
+
+They also clarify how the character addresses the user, responds to unexpected events, and balances narrative action with direct engagement.
+
+- **Style:** Dialogue examples can be minimal and tag-like for quick reference, or written in natural, flowing conversation. Always use `{user}` to represent the user and `{char}` to represent the character. Separate each self-contained exchange with `<START>`. For example:
+```json
+<START>
+{user}: What's your favorite food?
+{char}: Definitely ramen, {user}—especially when it's rainy outside.
+
+<START>
+{char}: Watch out! *a huge wave crashes over the boat*
+{char}: Hold on tight, {user}!
+```
+
+- **Impact:** Well-crafted dialogue examples act as an anchor for the character’s voice, ensuring their tone and mannerisms are preserved in real interactions, while also providing the model with concrete, situational patterns to draw from—making conversations feel more natural, immersive, and true to the intended personality.

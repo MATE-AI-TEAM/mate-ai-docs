@@ -11,6 +11,18 @@ export default {
       timestamp: false
     }
   },
+  "personas": {
+    title: "Personas",
+    theme: {
+      timestamp: false
+    }
+  },
+  "presets": {
+    title: "Presets",
+    theme: {
+      timestamp: false
+    }
+  },
   "community_guidelines": {
     title: "Community Guidelines",
     theme: {

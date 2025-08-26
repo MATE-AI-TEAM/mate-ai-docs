@@ -1,10 +1,16 @@
+import { Callout } from "nextra/components";
+
 # 👋 Greeting
+
+<Callout type="warning">
+    Even if the current chat context exceeds the maximum context length, we will **retain** the Greeting in the character's memory.
+</Callout>
 
 The Greeting is the first thing your AI character says when it starts a conversation. It sets the tone for the interaction and can greatly affect the user's experience. This is your character's chance to show its unique personality or role.
 
 Here are the main points for crafting an effective greeting:
 
-- **Length:** A greeting can range from 0-1024 characters. Short and concise one can often be more powerful.
+- **Length:** A greeting can range from 0-6000 characters. Short and concise one can often be more powerful.
 - **Impression:** The greeting greatly matters, especially for characters with simple or vague names. It's the ideal spot to clarify your character's identity.
 - **Scene-Setting** or **Prologue:** Besides introducing your character, a greeting also gives a hint of what interacting with the character will be like. It might prepare for a game or hint at the conversation's direction.
 - **User Reference:** You can use the special variable `{{user}}` to talk directly to the user in your greeting. For example, "Hello `{{user}}`, how are you today?" would show up as "Hello Jenny, how are you today?" if the user's name was Jenny.

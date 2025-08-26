@@ -28,13 +28,13 @@
     "top_p": {
       "type": "number",
       "minimum": 0,
-      "exclusiveMinimum": 0,
       "maximum": 1,
       "description": "Top-p sampling value"
     },
     "top_k": {
-      "type": "number",
+      "type": "integer",
       "minimum": 1,
+      "maximum": 100,
       "description": "Top-k sampling value"
     },
     "min_p": {
@@ -52,7 +52,6 @@
     "repetition_penalty": {
       "type": "number",
       "minimum": 0,
-      "exclusiveMinimum": 0,
       "maximum": 2,
       "description": "Repetition penalty"
     },
