@@ -4,4 +4,4 @@ node_modules
 
 _pagefind/
 
-.turbo
+.turbo/*.log
