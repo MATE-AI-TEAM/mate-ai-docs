@@ -20,7 +20,7 @@
     "@repo/ui": "workspace:*",
     "@tabler/icons-react": "3.2.0",
     "@tailwindcss/postcss": "^4.1.11",
-    "next": "15.5.7",
+    "next": "15.5.9",
     "nextra": "^4.6.0",
     "nextra-theme-docs": "^4.6.0",
     "postcss": "^8.5.6",
