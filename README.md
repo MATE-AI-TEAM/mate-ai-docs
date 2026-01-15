@@ -18,7 +18,7 @@
    <a href="mailto:support@aimate.me"><img src="https://img.shields.io/badge/support-brightgreen" alt="support"></a>
 </p>
 
-<h1 align="center">MATE.AI</h3>
+<h1 align="center">MATE.AI</h1>
 
 - ### NSFW AI chat bot.
 - ### AI characters and roleplaying platform for everyone.
