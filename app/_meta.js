@@ -1,32 +1,32 @@
 export default {
-  "index": {
+  index: {
     title: "Welcome To MATE.AI",
     theme: {
-      timestamp: false
-    }
+      timestamp: false,
+    },
   },
-  "characters": {
+  characters: {
     title: "Create Characters",
     theme: {
-      timestamp: false
-    }
+      timestamp: false,
+    },
   },
-  "personas": {
+  personas: {
     title: "Personas",
     theme: {
-      timestamp: false
-    }
+      timestamp: false,
+    },
   },
-  "presets": {
-    title: "Presets",
+  presets: {
+    title: "Presets 🧪",
     theme: {
-      timestamp: false
-    }
+      timestamp: false,
+    },
   },
-  "community_guidelines": {
+  community_guidelines: {
     title: "Community Guidelines",
     theme: {
-      timestamp: false
-    }
-  }
-}
+      timestamp: false,
+    },
+  },
+};
