@@ -37,12 +37,9 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const banner = (
-    <Banner storageKey="feature">
-      Arbitrary{" "}
-      <Link href={"//aimate.me/my-presets/create"} className={"underline"}>
-        Presets
-      </Link>{" "}
-      For Generating Text Using LLMs
+    <Banner storageKey="terminate">
+      ⚠️ Important Notice: This website will officially terminate its services
+      on August 11, 2026. Thank you for your support along the way.
     </Banner>
   );
 
