@@ -38,8 +38,8 @@ export default async function RootLayout({
 }) {
   const banner = (
     <Banner storageKey="terminate">
-      ⚠️ Important Notice: This website will officially terminate its services
-      on August 11, 2026. Thank you for your support along the way.
+      ⚠️ Important Notice: This website will officially cease maintenance on
+      August 11, 2026. Thank you for your support along the way.
     </Banner>
   );
 
